@@ -1,0 +1,59 @@
+  <form [formGroup]="nuevoProducto" (ngSubmit)="ingresarProducto()" enctype="multipart/form-data">
+    <div class="form-group">
+      <label>NOMBRE</label>
+      <input type="text" class="form-control"
+       formControlName="Nombre"
+       name="Nombre" [(ngModel)]="service.productoService.Nombre">
+    </div>
+
+    <div class="form-group">
+      <label>RUBRO</label>
+      <select class="custom-select"
+      formControlName="Rubro"
+      name="Rubro" [(ngModel)]="service.productoService.Rubro">
+        <option class="opcion" value="Calzado">Calzado</option>
+        <option class="opcion" value="Indumentaria">Indumentaria</option>
+        <option class="opcion" value="Accesorio">Accesorio</option>
+      </select>
+    </div>
+
+    <div class="form-row">
+      <div class="col-6">
+        <label>PRECIO</label> 
+        <input type="text" class="form-control"
+        formControlName="Precio"
+        name="Precio" [(ngModel)]="service.productoService.Precio">
+      </div>
+      <div class="col-6">
+        <label>STOCK</label>  
+        <input type="text" class="form-control"
+        formControlName="Stock"
+        name="Stock" [(ngModel)]="service.productoService.Stock">
+      </div>
+    </div>
+
+    <div class="form-row">
+    <div class="col mt-2">
+      <label>FOTO</label>
+        <img [src]="foto" style="width:200px;height:150px" id="imagen">
+        <input type="file" id="foto" 
+        formControlName="Imagen"
+         accept="image/*" 
+         class="mt-2"
+         (change)="onUploadImage($event)">
+    </div>
+        <div class="col-6 mt-2">
+          <label>DESCRIPCION</label>
+          <textarea class="form-control" rows="6" cols="10"
+          name="Descripcion" [(ngModel)]="service.productoService.Descripcion"
+          formControlName="Descripcion"></textarea>
+        </div>
+      </div>
+      <div class="mt-2 mb-3">
+          <button type="submit" class="btn btn-block btn-ingresar">INGRESAR</button>
+      </div>
+  </form>
+
+
+
+

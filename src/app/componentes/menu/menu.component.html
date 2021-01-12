@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-lg contenedor-carrito">
+  <ul class="navbar-nav ml-auto mt-2">
+    <div class="">
+      <a type="button" class="nav-item" (click)= "abrirMiCarrito()">Ver mi carrito</a>
+      <mat-icon matBadge="{{service.contador}}"
+      matBadgeColor="warn" class="mr-3">add_shopping_cart</mat-icon>
+    </div>
+  </ul>
+</nav>
+  <nav class="navbar navbar-expand-lg mb-2 menu navbar-dark bg-dark">
+      <a class="navbar-brand" routerLink='home'>
+        <img src="assets/img/logoSantinas.jpg" alt=""> Santina's
+        </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-item nav-link active" routerLink='producto-vista'>Productos</a>  
+          </li>
+          <li class="nav-item">
+            <a class="nav-item nav-link active" routerLink='productos'>Administrar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-item nav-link active" (click)="abrirLogin()">Ingresar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-item nav-link active">{{ !isLogged }}</a>
+          </li>
+        </ul>
+      </div>
+  </nav>

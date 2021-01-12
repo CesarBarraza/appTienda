@@ -1,0 +1,14 @@
+.btn-ingresar{
+    background-color: rgb(171, 91, 245);
+    border: #000 1px solid;
+    color: #000;
+}
+
+.btn-ingresar:hover{
+    background-color: blueviolet;
+    transition: 0.5s;
+}
+
+img{
+    border: #000 1px solid;
+}

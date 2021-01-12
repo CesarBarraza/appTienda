@@ -1,0 +1,23 @@
+<div class="container-fluid row">
+    <div class="contenedor-productos col-md-10 col-sm-12 col-xs-12">
+        <div class="row">
+            <mat-card class="col-md-2 col-xs-12 ml-4 mt-4 mb-4" style="width: 13rem;"
+             *ngFor="let data of producto | filter: filtro_valor">
+             
+              <img class="img-card" mat-card-image src="{{ data.Imagen }}">
+              <mat-card-content class="mb-5">
+                <p class="codigo">Codigo # {{ data.IDProducto }}</p>
+                <h6 class="card-title">{{ data.Nombre }}</h6>
+                <p class="">{{ data.Precio | currency: 5 :'$' }}</p>
+              </mat-card-content>
+              <mat-card-footer (click)="vista(data)" class="container-fluid footer">
+                <p>Vista rapida</p>
+              </mat-card-footer>
+            </mat-card>
+          </div>
+    </div>
+    <div class="col-md-2 ml-auto contenedor-check">
+        <app-check-column (search)="handlerSearch($event)"></app-check-column>
+    </div>
+</div>
+

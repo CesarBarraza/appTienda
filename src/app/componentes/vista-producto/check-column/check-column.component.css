@@ -1,0 +1,15 @@
+.titulo{
+    color: rgb(158, 150, 150);
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+

@@ -1,0 +1,33 @@
+.menu a:hover{
+    cursor: pointer;
+    color: rgb(228, 212, 212);
+    transition: 0.5s;
+}
+
+a{
+    color: #000;
+}
+
+.menu img{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    border: #fff solid 1px;
+}
+
+#foto-menu{
+    width: 100%;
+    height: 100px;
+}
+
+.contenedor-carrito{
+    background-color: #000;
+    color: ivory;
+    height: 50px;
+}
+
+
+.contenedor-carrito a{
+    color: #fff;
+    margin-right: 20px;
+}

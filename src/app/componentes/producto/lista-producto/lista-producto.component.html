@@ -1,0 +1,31 @@
+<div class="contenedor-lista">
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Nombre</th>
+        <th scope="col">Rubro</th>
+        <th scope="col">Precio</th>
+        <th scope="col">Stock</th>
+        <th scope="col">Foto</th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of producto">
+        <td>{{ data.Nombre }}</td>
+        <td>{{ data.Rubro }}</td>
+        <td>{{ data.Precio | currency: 5 :'$' }}</td>
+        <td>{{ data.Stock }}</td>
+        <td> <img [src]="data.Imagen" style="width:50px;height:50px"></td>
+        <td  (click)="selectProducto(data)">
+          <span class="material-icons">create</span>
+        </td>
+        <td (click)="eliminar(data.IDProducto)">
+          <span class="material-icons">delete_forever</span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+

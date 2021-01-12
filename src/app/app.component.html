@@ -1,0 +1,8 @@
+<mat-sidenav-container>
+<mat-sidenav #sidenav mode="push">
+    <app-vista-carrito></app-vista-carrito>
+</mat-sidenav>
+    <app-menu (toggleMiCarrito)= "sidenav.toggle()"></app-menu>
+<router-outlet></router-outlet>
+<app-footer></app-footer>
+</mat-sidenav-container>

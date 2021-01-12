@@ -1,0 +1,31 @@
+.contenedor-check{
+    border-left: rgb(160, 157, 157) 2px solid;
+    height: unset;
+}
+
+.contenedor-productos{
+    height: 450px;
+    overflow: auto;   
+}
+
+.footer {
+    background-color:hsl(211, 17%, 48%);
+    position: absolute;
+    bottom:0px;
+    height:50px;
+    z-index:1px;
+    cursor: pointer;
+}
+
+.footer p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.img-card {
+    max-height: 170px;
+}
+
+mat-card {
+    border-top: black solid 1px;
+}

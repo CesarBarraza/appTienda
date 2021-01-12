@@ -1,0 +1,43 @@
+.card-img {
+    height: 100%;
+}
+
+.santina {
+    height: 380px;
+}
+
+.titulo {
+    text-align: center;
+    margin-top: 0px;
+}
+
+ul li img {
+    width: 30px;
+    height: 30px;
+}
+
+.lista-precio li {
+    text-decoration: none;
+    display:inline-block;
+}
+
+.lista-precio li {
+    text-decoration: none;
+    display:inline-block;
+}
+
+.lista-precio .btn-quitar {
+    color: red;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+}
+
+.nombre-producto {
+    margin-top: -15px;
+}
+
+.card-text {
+    position: absolute;
+    left: 10px;
+}

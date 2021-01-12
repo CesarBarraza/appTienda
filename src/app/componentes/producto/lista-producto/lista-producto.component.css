@@ -1,0 +1,18 @@
+.contenedor-lista{
+    height: 400px;
+    overflow: auto;
+    width: 800px;
+}
+
+tbody tr:hover{
+    background-color: rgb(150, 167, 182);
+    cursor: pointer;
+    color: bisque;
+}
+ td{
+    line-height: 50px;
+ }
+
+ td span{
+    line-height: 50px;
+ }
